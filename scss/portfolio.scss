@@ -1,0 +1,93 @@
+
+@import 'style';
+
+/**************
+HEADER
+**************/
+
+.header_portfolio {
+    height: 270px;
+#portfolio_wrapper {
+    margin: 0 10px;
+    padding: 30px 0;
+    background: lighten(black, 29%);
+    box-shadow: 3px 4px 3px lighten(black, 10%);
+    text-align: center;
+    h2 {
+        font-size: 2.5em;
+        font-family: "Permanent Marker", cursive;
+        color: $main;
+        margin-bottom: 25px;
+    }
+}
+}
+
+#showcase {
+    background: darken(white, 15%);
+    text-align: center;
+    padding: 30px 0;
+        .container {
+            h2 {
+                padding-bottom: 30px;
+                font-family: $font_first;
+                font-size: 2.5em;
+                color: $main;
+            }
+            .item-computer {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 270px 270px;
+                grid-gap: 15px;
+                position: relative;
+                .item {
+                    border: 2px solid white;
+                    box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+                }
+                .item1 {
+                    background: url("../img/DeanHollingworth.png");
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    p {
+                        color: white;
+                        width: 100%;
+                        padding: 9px 2px;
+                        font-family: "Roboto", cursive;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        background: rgba(0, 0, 0, 0.8);
+                    }
+                }
+                .item2 {
+                    background: url("../img/ChiveNationMtl.png");
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    p {
+                        color: white;
+                        width: 100%;
+                        padding: 9px 2px;
+                        font-family: "Roboto", cursive;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        background: rgba(0, 0, 0, 0.8)
+                    }
+                }
+                .item3 {
+                    background: url("../img/stentor.jpeg");
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    p {
+                        color: white;
+                        width: 100%;
+                        padding: 9px 2px;
+                        font-family: "Roboto", cursive;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        background: rgba(0, 0, 0, 0.8)
+                    }
+                }
+            }
+        }
+}

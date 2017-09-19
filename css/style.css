@@ -1,0 +1,342 @@
+/*********************
+NAVBAR
+*********************/
+.navbar-nav li {
+  padding: 0 30px;
+  font-size: 1.1em;
+  font-weight: bold; }
+  .navbar-nav li a {
+    color: black !important; }
+    .navbar-nav li a:hover {
+      color: #e26562 !important; }
+
+/*********************
+HEADER
+*********************/
+header {
+  background: #404040;
+  height: 430px;
+  padding: 60px 0 0; }
+  header #wrapper {
+    margin: 0 10px;
+    padding: 30px 0;
+    background: #4a4a4a;
+    box-shadow: 3px 4px 3px #1a1a1a;
+    text-align: center; }
+    header #wrapper h2 {
+      font-size: 2.5em;
+      font-family: "Permanent Marker", cursive;
+      color: #e26562;
+      margin-bottom: 25px; }
+    header #wrapper h3 {
+      font-family: "Roboto", cursive;
+      font-weight: 300;
+      color: white; }
+    header #wrapper hr {
+      border: 1px solid #b3b3b3;
+      border-radius: 100%;
+      width: 80%; }
+    header #wrapper ul {
+      margin-top: 20px;
+      display: block;
+      padding: 0; }
+      header #wrapper ul li {
+        display: inline-block; }
+        header #wrapper ul li a {
+          color: white;
+          text-decoration-line: none;
+          padding: 0 10px;
+          font-size: 1.4em; }
+      header #wrapper ul .fa-facebook:hover {
+        color: #3b5999; }
+      header #wrapper ul .fa-envelope:hover {
+        color: #02b875; }
+      header #wrapper ul .fa-github:hover {
+        color: #913399; }
+
+/*********************
+PORTFOLIO
+*********************/
+#portfolio {
+  background: #e26562;
+  height: 450px;
+  text-align: center; }
+  #portfolio h2 {
+    padding: 30px 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 2.5em;
+    color: white; }
+  #portfolio .item-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px; }
+  #portfolio .item {
+    height: 250px;
+    position: relative; }
+  #portfolio .item1 {
+    background: url("../img/DeanHollingworth.png");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end; }
+    #portfolio .item1 p {
+      color: white;
+      width: 100%;
+      padding: 9px 2px;
+      font-family: "Roboto", cursive;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.8); }
+  #portfolio .item2 {
+    background: url("../img/ChiveNationMtl.png");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end; }
+    #portfolio .item2 p {
+      color: white;
+      width: 100%;
+      padding: 9px 2px;
+      font-family: "Roboto", cursive;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.8); }
+  #portfolio .item3 {
+    background: url("../img/stentor.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end; }
+    #portfolio .item3 p {
+      color: white;
+      width: 100%;
+      padding: 9px 2px;
+      font-family: "Roboto", cursive;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.8); }
+  #portfolio .item:hover::after {
+    content: attr(data-background-icon);
+    font-family: "FontAwesome";
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  #portfolio .item:hover::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+  #portfolio .item3 {
+    display: none; }
+  #portfolio button {
+    margin: 20px auto;
+    padding: 10px 50px;
+    background: white;
+    color: #e26562;
+    font-weight: bold;
+    font-family: "Roboto", cursive;
+    transition: 0.3s; }
+    #portfolio button:hover {
+      background: #0d0d0d;
+      cursor: pointer; }
+
+    /*********************
+ABOUT
+*********************/
+#about {
+  height: 600px;
+  text-align: center; }
+  #about h2 {
+    font-size: 2.5em;
+    font-family: "Permanent Marker", cursive;
+    color: #e26562; }
+  #about h2:first-child {
+    padding-top: 30px; }
+  #about hr {
+    border: 1px solid #4d4d4d;
+    border-radius: 100%;
+    width: 80%; }
+
+    /*********************
+OFFER
+*********************/
+#offers {
+  height: 1000px;
+  text-align: center;
+  background: #404040; }
+  #offers h2 {
+    font-size: 2.5em;
+    font-family: "Permanent Marker", cursive;
+    color: #e26562;
+    margin: 0 10px; }
+  #offers h2:first-child {
+    padding-top: 30px; }
+  #offers hr {
+    border: 1px solid #b3b3b3;
+    border-radius: 100%;
+    width: 80%; }
+  #offers .info-offer {
+    margin-top: 20px; }
+  #offers .offer {
+    margin: 13px 10px;
+    padding: 30px 10px;
+    background: #4a4a4a;
+    box-shadow: 3px 4px 3px #1a1a1a;
+    text-align: center;
+    font-family: "Roboto", cursive; }
+    #offers .offer a {
+      text-decoration-line: none; }
+    #offers .offer h4 {
+      color: white; }
+      #offers .offer h4 i {
+        padding-right: 10px; }
+    #offers .offer p {
+      color: #e26562; }
+
+    /*********************
+CONTACT
+*********************/
+#contact {
+  height: 800px;
+  text-align: center;
+  background: #e26562; }
+  #contact h2 {
+    font-size: 2.5em;
+    font-family: "Permanent Marker", cursive;
+    color: white;
+    margin: 0 10px; }
+  #contact h2:first-child {
+    padding-top: 30px; }
+  #contact hr {
+    border: 1px solid #4d4d4d;
+    border-radius: 100%;
+    width: 80%; }
+  #contact .info-contact {
+    padding-top: 40px; }
+    #contact .info-contact h5 {
+      font-family: "Roboto", cursive;
+      font-size: 1.5em;
+      font-weight: bold; }
+  #contact form {
+    margin: 30px auto 0; }
+    #contact form input {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    #contact form button {
+      margin: 20px auto;
+      padding: 10px 50px;
+      background: white;
+      color: #e26562;
+      font-weight: bold;
+      font-family: "Roboto", cursive;
+      transition: 0.3s; }
+      #contact form button:hover {
+        background: #0d0d0d;
+        cursor: pointer; }
+
+    /*********************
+FOOTER
+*********************/
+footer {
+  padding: 10px;
+  background: #404040;
+  color: white;
+  display: block;
+  text-align: center; }
+  footer .inline-footer > * {
+    display: inline-block; }
+  footer p {
+    margin: 0 10px; }
+  footer li {
+    margin-left: 10px; }
+    footer li a {
+      color: white; }
+      footer li a i {
+        font-size: 20px; }
+  footer .fa-facebook:hover {
+    color: #3b5999; }
+  footer .fa-envelope:hover {
+    color: #02b875; }
+  footer .fa-github:hover {
+    color: #913399; }
+
+@media (min-width: 700px) {
+  #offers .info-offer {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "wordpress static"  "responsive tennis"; }
+    #offers .info-offer .offer {
+      padding: 15px 15px;
+      position: relative; }
+      #offers .info-offer .offer .offer-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    #offers .info-offer .wordpress {
+      grid-area: wordpress; }
+    #offers .info-offer .static {
+      grid-area: static; }
+    #offers .info-offer .responsive {
+      grid-area: responsive; }
+    #offers .info-offer .tennis {
+      grid-area: tennis; } }
+@media (min-width: 992px) {
+  .nav-portfolio {
+    transition: .4s;
+    border: 1px solid black; }
+    .nav-portfolio:hover {
+      background: rgba(0, 0, 0, 0.9); }
+
+  header {
+    height: 700px; }
+    header #wrapper {
+      margin: 0 20px;
+      background: none;
+      box-shadow: none;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 250px 250px;
+      grid-gap: 15px;
+      grid-template-areas: "div1 div-central div-central div2" "div3 div-central div-central div4"; }
+      header #wrapper .div {
+        background: #4a4a4a;
+        box-shadow: 3px 4px 3px #1a1a1a; }
+      header #wrapper .div1 {
+        grid-area: div1;
+        background: url("https://images.pexels.com/photos/38519/macbook-laptop-ipad-apple-38519.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover; }
+      header #wrapper .div2 {
+        grid-area: div2;
+        background: url("https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover; }
+      header #wrapper .div3 {
+        grid-area: div3;
+        background: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover; }
+      header #wrapper .div4 {
+        grid-area: div4;
+        background: url("https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover; }
+      header #wrapper .div-central {
+        grid-area: div-central;
+        position: relative; }
+        header #wrapper .div-central .info {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%; }
+          header #wrapper .div-central .info h2 {
+            font-size: 5em; }
+          header #wrapper .div-central .info li {
+            margin-top: 20px; }
+            header #wrapper .div-central .info li i {
+              font-size: 1.5em;
+              padding: 0 5px; } }
+
+/*# sourceMappingURL=style.css.map */
