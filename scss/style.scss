@@ -200,6 +200,18 @@ ABOUT
             border-radius: 100%;
             width: 80%;
         }
+        p {
+            font-family: "Roboto", cursive;
+                .bold {
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    color: $main;
+                }
+        }
+        h4 {
+            padding: 10px 0;
+            font-family: "Permanent Marker", cursive;
+        }
     }
     /*********************
 OFFER
@@ -277,6 +289,9 @@ CONTACT
         }
         form {
             margin: 30px auto 0;
+            .form-group {
+                margin: 0.5rem;
+            }
             input {
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -365,6 +380,13 @@ FOOTER
         }
     }
 @media (min-width: 992px) {
+
+    .navbar-custom {
+        background: $main !important;
+        .navbar-nav li a:hover {
+                    color: white !important;
+                }
+            }
         .nav-portfolio {
             transition: .4s;
             border: 1px solid black;
@@ -431,5 +453,17 @@ FOOTER
                             }
                     }
         }
+    }
+    #portfolio h2 {
+        font-size: 3em;
+    }
+    #about h2 {
+        font-size: 3em;
+    }
+    #offers h2 {
+        font-size: 3em;
+    }
+    #contact h2 {
+        font-size: 3em;
     }
 }

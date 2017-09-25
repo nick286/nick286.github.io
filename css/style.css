@@ -159,6 +159,15 @@ ABOUT
     border: 1px solid #4d4d4d;
     border-radius: 100%;
     width: 80%; }
+  #about p {
+    font-family: "Roboto", cursive; }
+    #about p .bold {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #e26562; }
+  #about h4 {
+    padding: 10px 0;
+    font-family: "Permanent Marker", cursive; }
 
     /*********************
 OFFER
@@ -222,6 +231,8 @@ CONTACT
       font-weight: bold; }
   #contact form {
     margin: 30px auto 0; }
+    #contact form .form-group {
+      margin: 0.5rem; }
     #contact form input {
       padding-top: 10px;
       padding-bottom: 10px; }
@@ -286,6 +297,11 @@ footer {
     #offers .info-offer .tennis {
       grid-area: tennis; } }
 @media (min-width: 992px) {
+  .navbar-custom {
+    background: #e26562 !important; }
+    .navbar-custom .navbar-nav li a:hover {
+      color: white !important; }
+
   .nav-portfolio {
     transition: .4s;
     border: 1px solid black; }
@@ -337,6 +353,18 @@ footer {
             margin-top: 20px; }
             header #wrapper .div-central .info li i {
               font-size: 1.5em;
-              padding: 0 5px; } }
+              padding: 0 5px; }
+
+  #portfolio h2 {
+    font-size: 3em; }
+
+  #about h2 {
+    font-size: 3em; }
+
+  #offers h2 {
+    font-size: 3em; }
+
+  #contact h2 {
+    font-size: 3em; } }
 
 /*# sourceMappingURL=style.css.map */

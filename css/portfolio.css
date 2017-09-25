@@ -159,6 +159,15 @@ ABOUT
     border: 1px solid #4d4d4d;
     border-radius: 100%;
     width: 80%; }
+  #about p {
+    font-family: "Roboto", cursive; }
+    #about p .bold {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #e26562; }
+  #about h4 {
+    padding: 10px 0;
+    font-family: "Permanent Marker", cursive; }
 
     /*********************
 OFFER
@@ -222,6 +231,8 @@ CONTACT
       font-weight: bold; }
   #contact form {
     margin: 30px auto 0; }
+    #contact form .form-group {
+      margin: 0.5rem; }
     #contact form input {
       padding-top: 10px;
       padding-bottom: 10px; }
@@ -268,18 +279,32 @@ footer {
     display: grid;
     grid-auto-columns: 1fr 1fr;
     grid-template-rows: 200px 200px;
-    grid-template-areas: "wordpress static" "tennis tennis"; }
+    grid-template-areas: "wordpress static"  "responsive tennis"; }
     #offers .info-offer .offer {
-      padding: 15px 15px; }
+      padding: 15px 15px;
+      position: relative; }
+      #offers .info-offer .offer .offer-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
     #offers .info-offer .wordpress {
       grid-area: wordpress; }
     #offers .info-offer .static {
       grid-area: static; }
+    #offers .info-offer .responsive {
+      grid-area: responsive; }
     #offers .info-offer .tennis {
       grid-area: tennis; } }
 @media (min-width: 992px) {
+  .navbar-custom {
+    background: #e26562 !important; }
+    .navbar-custom .navbar-nav li a:hover {
+      color: white !important; }
+
   .nav-portfolio {
-    transition: .4s; }
+    transition: .4s;
+    border: 1px solid black; }
     .nav-portfolio:hover {
       background: rgba(0, 0, 0, 0.9); }
 
@@ -328,7 +353,19 @@ footer {
             margin-top: 20px; }
             header #wrapper .div-central .info li i {
               font-size: 1.5em;
-              padding: 0 5px; } }
+              padding: 0 5px; }
+
+  #portfolio h2 {
+    font-size: 3em; }
+
+  #about h2 {
+    font-size: 3em; }
+
+  #offers h2 {
+    font-size: 3em; }
+
+  #contact h2 {
+    font-size: 3em; } }
 /**************
 HEADER
 **************/
@@ -349,59 +386,114 @@ HEADER
 #showcase {
   background: #d9d9d9;
   text-align: center;
-  padding: 30px 0; }
+  padding: 30px 10px; }
+  #showcase .container {
+    /*                 .item2 {
+                        background: url("../img/ChiveNationMtl.png");
+                        background-size: cover;
+                        display: flex;
+                        align-items: flex-end;
+                        p {
+                            color: white;
+                            width: 100%;
+                            padding: 9px 2px;
+                            font-family: "Roboto", cursive;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            background: rgba(0, 0, 0, 0.8) 
+                        }
+                    } 
+                     .item3 {
+                        background: url("../img/stentor.jpeg");
+                        background-size: cover;
+                        display: flex;
+                        align-items: flex-end;
+                        p {
+                            color: white;
+                            width: 100%;
+                            padding: 9px 2px;
+                            font-family: "Roboto", cursive;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            background: rgba(0, 0, 0, 0.8)
+                        }
+                    } */ }
+    #showcase .container h2 {
+      padding-bottom: 30px;
+      font-family: "Permanent Marker", cursive;
+      font-size: 2.5em;
+      color: #e26562; }
+    #showcase .container .item-computer
+    .item {
+      border: 2px solid white;
+      box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+      margin: 15px 0; }
+      #showcase .container .item-computer
+      .item img {
+        width: 100%;
+        height: 300px; }
+      #showcase .container .item-computer
+      .item p {
+        color: white;
+        width: 100%;
+        padding: 9px 2px;
+        font-family: "Roboto", cursive;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0.8); }
+    #showcase .container .item1 {
+      /*  background: url("../img/DeanHollingworth.png");
+       background-size: cover; */ }
+  #showcase hr {
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 25%; }
+  #showcase .showcaseMore {
+    padding-top: 5px; }
+    #showcase .showcaseMore h4 {
+      color: #e26562;
+      text-transform: uppercase;
+      font-weight: bold; }
+    #showcase .showcaseMore button {
+      margin-top: 10px;
+      padding: 10px 35px;
+      background: white;
+      border: 1px solid black;
+      border-radius: 3px;
+      font-family: "Roboto", cursive;
+      font-weight: bold; }
+      #showcase .showcaseMore button:hover {
+        background: black;
+        color: #e26562; }
+
+@media (min-width: 992px) {
+  .header_portfolio #portfolio_wrapper h2 {
+    font-size: 5em; }
+
   #showcase .container h2 {
-    padding-bottom: 30px;
-    font-family: "Permanent Marker", cursive;
-    font-size: 2.5em;
-    color: #e26562; }
-  #showcase .container .item-computer {
+    font-size: 3em; }
+
+  #contact h2 {
+    font-size: 3em; }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 270px 270px;
-    grid-gap: 15px;
-    position: relative; }
-    #showcase .container .item-computer .item {
-      border: 2px solid white;
-      box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5); }
-    #showcase .container .item-computer .item1 {
-      background: url("../img/DeanHollingworth.png");
-      background-size: cover;
-      display: flex;
-      align-items: flex-end; }
-      #showcase .container .item-computer .item1 p {
-        color: white;
-        width: 100%;
-        padding: 9px 2px;
-        font-family: "Roboto", cursive;
-        font-weight: bold;
-        text-transform: uppercase;
-        background: rgba(0, 0, 0, 0.8); }
-    #showcase .container .item-computer .item2 {
-      background: url("../img/ChiveNationMtl.png");
-      background-size: cover;
-      display: flex;
-      align-items: flex-end; }
-      #showcase .container .item-computer .item2 p {
-        color: white;
-        width: 100%;
-        padding: 9px 2px;
-        font-family: "Roboto", cursive;
-        font-weight: bold;
-        text-transform: uppercase;
-        background: rgba(0, 0, 0, 0.8); }
-    #showcase .container .item-computer .item3 {
-      background: url("../img/stentor.jpeg");
-      background-size: cover;
-      display: flex;
-      align-items: flex-end; }
-      #showcase .container .item-computer .item3 p {
-        color: white;
-        width: 100%;
-        padding: 9px 2px;
-        font-family: "Roboto", cursive;
-        font-weight: bold;
-        text-transform: uppercase;
-        background: rgba(0, 0, 0, 0.8); }
+    align-items: center;
+    transition: 0.5s; }
+    .item:hover {
+      transform: scale(1.05); }
+
+  .item1:hover {
+    background: #0ded31; }
+
+  .item3:hover {
+    background: #e9b42e; }
+    .item3:hover img {
+      object-fit: contain; } }
 
 /*# sourceMappingURL=portfolio.css.map */
