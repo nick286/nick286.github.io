@@ -28,6 +28,7 @@ MAIN CONTENT
         h4 {
             padding: 15px 15px 10px;
             color: $main;
+            /* font-family: "Roboto", cursive; */
         }
         p {
             padding: 0 5% 5%;
@@ -67,7 +68,16 @@ MAIN CONTENT
     }
 }
 
+.infoWebsite button:hover {
+    cursor: pointer;
+} 
+
 @media (min-width: 992px) {
+/*     .nav-item a.brand {
+        font-size: 2em;
+        font-family: "Permanent Marker", cursive;
+    } */
+
     .wrapper {
         margin: 2.5%;
         display: grid;

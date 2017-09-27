@@ -1,6 +1,10 @@
 /*********************
 NAVBAR
 *********************/
+.navbar .navbar-brand {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.6em; }
+
 .navbar-nav li {
   padding: 0 30px;
   font-size: 1.1em;
@@ -59,7 +63,6 @@ PORTFOLIO
 *********************/
 #portfolio {
   background: #e26562;
-  height: 450px;
   text-align: center; }
   #portfolio h2 {
     padding: 30px 0;
@@ -67,12 +70,11 @@ PORTFOLIO
     font-size: 2.5em;
     color: white; }
   #portfolio .item-mobile {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px; }
+    display: grid; }
   #portfolio .item {
-    height: 250px;
-    position: relative; }
+    height: 350px;
+    position: relative;
+    margin-bottom: 10px; }
   #portfolio .item1 {
     background: url("../img/DeanHollingworth.png");
     background-size: cover;
@@ -100,6 +102,7 @@ PORTFOLIO
       text-transform: uppercase;
       background: rgba(0, 0, 0, 0.8); }
   #portfolio .item3 {
+    /* display: none; */
     background: url("../img/stentor.jpeg");
     background-size: cover;
     display: flex;
@@ -121,19 +124,21 @@ PORTFOLIO
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  #portfolio .item:hover::before {
+  #portfolio .item::before {
     content: "";
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(98, 226, 164, 0.7);
     position: absolute;
+    opacity: 0;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%; }
-  #portfolio .item3 {
-    display: none; }
+    width: 100%;
+    transition: 0.5s; }
+  #portfolio .item:hover:before {
+    opacity: 1; }
   #portfolio button {
     margin: 20px auto;
-    padding: 10px 50px;
+    padding: 15px 60px;
     background: white;
     color: #e26562;
     font-weight: bold;
@@ -147,12 +152,19 @@ PORTFOLIO
 ABOUT
 *********************/
 #about {
-  height: 600px;
+  /* height: 600px; */
   text-align: center; }
   #about h2 {
     font-size: 2.5em;
     font-family: "Permanent Marker", cursive;
     color: #e26562; }
+  #about .info-about {
+    margin: 0 auto; }
+    #about .info-about img {
+      width: 80%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-radius: 50%; }
   #about h2:first-child {
     padding-top: 30px; }
   #about hr {
@@ -173,8 +185,9 @@ ABOUT
 OFFER
 *********************/
 #offers {
-  height: 1000px;
+  /*  height: 1000px; */
   text-align: center;
+  padding: 20px 0;
   background: #404040; }
   #offers h2 {
     font-size: 2.5em;
@@ -190,16 +203,21 @@ OFFER
   #offers .info-offer {
     margin-top: 20px; }
   #offers .offer {
-    margin: 13px 10px;
+    margin: 13px 7px;
     padding: 30px 10px;
     background: #4a4a4a;
     box-shadow: 3px 4px 3px #1a1a1a;
     text-align: center;
-    font-family: "Roboto", cursive; }
+    font-family: "Roboto", cursive;
+    transition: 0.3s; }
+    #offers .offer:hover {
+      transform: scale(1.03);
+      background: #525252; }
     #offers .offer a {
       text-decoration-line: none; }
     #offers .offer h4 {
-      color: white; }
+      color: white;
+      font-size: 1.2em; }
       #offers .offer h4 i {
         padding-right: 10px; }
     #offers .offer p {
@@ -209,7 +227,6 @@ OFFER
 CONTACT
 *********************/
 #contact {
-  height: 800px;
   text-align: center;
   background: #e26562; }
   #contact h2 {
@@ -275,38 +292,38 @@ footer {
     color: #913399; }
 
 @media (min-width: 700px) {
-  #offers .info-offer {
+  .info-computer {
     display: grid;
-    grid-auto-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    grid-template-areas: "wordpress static"  "responsive tennis"; }
-    #offers .info-offer .offer {
-      padding: 15px 15px;
-      position: relative; }
-      #offers .info-offer .offer .offer-info {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-    #offers .info-offer .wordpress {
-      grid-area: wordpress; }
-    #offers .info-offer .static {
-      grid-area: static; }
-    #offers .info-offer .responsive {
-      grid-area: responsive; }
-    #offers .info-offer .tennis {
-      grid-area: tennis; } }
+    grid-template-columns: 2fr 1fr;
+    align-items: center; }
+    .info-computer .info-about img {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .info-computer h4 {
+      font-size: 2.1em; }
+
+  .testimonials h4 {
+    font-size: 2.1em; } }
 @media (min-width: 992px) {
   .navbar-custom {
     background: #e26562 !important; }
     .navbar-custom .navbar-nav li a:hover {
       color: white !important; }
 
+  .navbar .navbar-brand {
+    font-size: 2em;
+    color: #fff; }
+
   .nav-portfolio {
     transition: .4s;
-    border: 1px solid black; }
+    border: 1px solid black;
+    font-size: 1.1em; }
     .nav-portfolio:hover {
       background: rgba(0, 0, 0, 0.9); }
+
+  a.nav-contact {
+    font-size: 1.1em; }
 
   header {
     height: 700px; }
@@ -355,6 +372,40 @@ footer {
               font-size: 1.5em;
               padding: 0 5px; }
 
+  #offers .info-offer {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "title wordpress static"  "title responsive touchUp" "title tennis tennis"; }
+    #offers .info-offer .offer {
+      padding: 15px 5px;
+      position: relative; }
+      #offers .info-offer .offer .offer-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      #offers .info-offer .offer h4 {
+        font-size: 1.4rem; }
+    #offers .info-offer .offerTitle {
+      grid-area: title;
+      align-self: center;
+      margin-right: 20px; }
+    #offers .info-offer .wordpress {
+      grid-area: wordpress; }
+    #offers .info-offer .static {
+      grid-area: static; }
+    #offers .info-offer .responsive {
+      grid-area: responsive; }
+    #offers .info-offer .tennis {
+      grid-area: tennis; }
+    #offers .info-offer .touchUp {
+      grid-area: touchUp; }
+
+  .item-mobile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+
   #portfolio h2 {
     font-size: 3em; }
 
@@ -365,7 +416,19 @@ footer {
     font-size: 3em; }
 
   #contact h2 {
-    font-size: 3em; } }
+    font-size: 3em; }
+
+  #about .info-about {
+    text-align: left; }
+
+  #about p {
+    font-size: 1.1em; }
+
+  #about p::first-letter {
+    font-size: 2.5em;
+    color: #d12b27;
+    padding-right: 3px;
+    font-family: "Permanent Marker", cursive; } }
 p {
   font-family: "Roboto", cursive; }
 
@@ -389,7 +452,8 @@ MAIN CONTENT
       margin: 15px auto; }
     .container .content h4 {
       padding: 15px 15px 10px;
-      color: #e26562; }
+      color: #e26562;
+      /* font-family: "Roboto", cursive; */ }
     .container .content p {
       padding: 0 5% 5%;
       font-size: 14px; }
@@ -418,7 +482,14 @@ MAIN CONTENT
     padding: 10px 0;
     font-size: 0.8em; }
 
+.infoWebsite button:hover {
+  cursor: pointer; }
+
 @media (min-width: 992px) {
+  /*     .nav-item a.brand {
+          font-size: 2em;
+          font-family: "Permanent Marker", cursive;
+      } */
   .wrapper {
     margin: 2.5%;
     display: grid;
