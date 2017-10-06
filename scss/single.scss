@@ -56,7 +56,11 @@ MAIN CONTENT
                     color: $main;
                 }
             }
+            .contentTitle h4 {
+                font-size: 2em;
+            }
     }
+        
 }
 .services {
     ul {

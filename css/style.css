@@ -148,7 +148,7 @@ PORTFOLIO
       background: #0d0d0d;
       cursor: pointer; }
 
-    /*********************
+/*********************
 ABOUT
 *********************/
 #about {
@@ -181,13 +181,22 @@ ABOUT
     padding: 10px 0;
     font-family: "Permanent Marker", cursive; }
 
-    /*********************
+.aboutOffers p,
+.aboutResume p {
+  background: rgba(230, 230, 230, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  box-shadow: 1px 1px 2px #f2b9b8;
+  transition: 0.3s;
+  border-radius: 4px; }
+
+/*********************
 OFFER
 *********************/
 #offers {
   /*  height: 1000px; */
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 20px;
   background: #404040; }
   #offers h2 {
     font-size: 2.5em;
@@ -207,9 +216,11 @@ OFFER
     padding: 30px 10px;
     background: #4a4a4a;
     box-shadow: 3px 4px 3px #1a1a1a;
+    box-shadow: 1px 1px 3px #e26562;
     text-align: center;
     font-family: "Roboto", cursive;
-    transition: 0.3s; }
+    transition: 0.3s;
+    border-radius: 15px; }
     #offers .offer:hover {
       transform: scale(1.03);
       background: #525252; }
@@ -223,7 +234,7 @@ OFFER
     #offers .offer p {
       color: #e26562; }
 
-    /*********************
+/*********************
 CONTACT
 *********************/
 #contact {
@@ -265,7 +276,7 @@ CONTACT
         background: #0d0d0d;
         cursor: pointer; }
 
-    /*********************
+/*********************
 FOOTER
 *********************/
 footer {
@@ -294,14 +305,14 @@ footer {
 @media (min-width: 700px) {
   .info-computer {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center; }
     .info-computer .info-about img {
       width: 100%;
       margin-top: 0;
       margin-bottom: 0; }
     .info-computer h4 {
-      font-size: 2.1em; }
+      font-size: 2.6em; }
 
   .testimonials h4 {
     font-size: 2.1em; } }
@@ -372,11 +383,37 @@ footer {
               font-size: 1.5em;
               padding: 0 5px; }
 
+  .aboutResume,
+  .aboutOffers {
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px; }
+    .aboutResume p,
+    .aboutOffers p {
+      background: rgba(230, 230, 230, 0.2);
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 5px;
+      box-shadow: 1px 1px 2px #f2b9b8;
+      transition: 0.3s;
+      border-radius: 4px; }
+
+  .aboutOffers {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .aboutOffers h4 {
+      grid-column: 1/3; }
+    .aboutOffers p {
+      grid-column: 1/3; }
+
+  .aboutOffers p:first-child {
+    border-right: 1px solid black; }
+
   #offers .info-offer {
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px 200px 200px;
-    grid-template-areas: "title wordpress static"  "title responsive touchUp" "title tennis tennis"; }
+    grid-template-areas: "title wordpress static" "title responsive touchUp" "title tennis more"; }
     #offers .info-offer .offer {
       padding: 15px 5px;
       position: relative; }
@@ -401,6 +438,8 @@ footer {
       grid-area: tennis; }
     #offers .info-offer .touchUp {
       grid-area: touchUp; }
+    #offers .info-offer .more {
+      grid-area: more; }
 
   .item-mobile {
     display: grid;

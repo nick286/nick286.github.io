@@ -81,7 +81,7 @@ HEADER
                 border-radius: 25%;
             }
             .showcaseMore {
-                padding-top: 5px;
+                padding-top: 15px;
                     h4 {
                         color: $main;
                         text-transform: uppercase;
@@ -98,6 +98,7 @@ HEADER
                             &:hover {
                                 background: black;
                                 color: $main;
+                                cursor: pointer;
                             }
                     }
             }
