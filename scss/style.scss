@@ -3,7 +3,7 @@ $font_first: "Permanent Marker",
 cursive;
 
 p {
-    font-family: "Helvetica Neue", cursive;
+    font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
 }
 
 /*********************
@@ -51,7 +51,7 @@ header {
             margin-bottom: 25px;
         }
         h3 {
-            font-family: "Helvetica Neue", cursive;
+            font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
             font-weight: 300;
             color: white;
         }
@@ -117,7 +117,7 @@ PORTFOLIO
             color: white;
             width: 100%;
             padding: 9px 2px;
-            font-family: "Helvetica Neue", cursive;
+            font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
             font-weight: bold;
             text-transform: uppercase;
             background: rgba(0, 0, 0, 0.8);
@@ -148,7 +148,7 @@ PORTFOLIO
             color: white;
             width: 100%;
             padding: 9px 2px;
-            font-family: "Helvetica Neue", cursive;
+            font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
             font-weight: bold;
             text-transform: uppercase;
             background: rgba(0, 0, 0, 0.8)
@@ -184,7 +184,7 @@ PORTFOLIO
         background: white;
         color: $main;
         font-weight: bold;
-        font-family: "Helvetica Neue", cursive;
+        font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
         transition: 0.3s;
         &:hover {
             background: lighten(black, 5%);
@@ -224,7 +224,7 @@ ABOUT
         width: 80%;
     }
     p {
-        font-family: "Helvetica Neue", cursive;
+        font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
         .bold {
             font-weight: bold;
             font-size: 1.1em;
@@ -292,7 +292,7 @@ OFFER
         box-shadow: 3px 4px 3px lighten(black, 10%);
         box-shadow: 1px 1px 3px $main;
         text-align: center;
-        font-family: "Helvetica Neue", cursive;
+        font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
         transition: 0.3s;
         border-radius: 15px;
         &:hover {
@@ -340,7 +340,7 @@ CONTACT
     .info-contact {
         padding-top: 40px;
         h5 {
-            font-family: "Helvetica Neue", cursive;
+            font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
             font-size: 1.5em;
             font-weight: bold;
         }
@@ -360,7 +360,7 @@ CONTACT
             background: white;
             color: $main;
             font-weight: bold;
-            font-family: "Helvetica Neue", cursive;
+            font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
             transition: 0.3s;
             &:hover {
                 background: lighten(black, 5%);

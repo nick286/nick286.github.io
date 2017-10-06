@@ -1,3 +1,6 @@
+p {
+  font-family: "Helvetica Neue", Helvetica, sans-serif, cursive; }
+
 /*********************
 NAVBAR
 *********************/
@@ -33,7 +36,7 @@ header {
       color: #e26562;
       margin-bottom: 25px; }
     header #wrapper h3 {
-      font-family: "Roboto", cursive;
+      font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
       font-weight: 300;
       color: white; }
     header #wrapper hr {
@@ -84,7 +87,7 @@ PORTFOLIO
       color: white;
       width: 100%;
       padding: 9px 2px;
-      font-family: "Roboto", cursive;
+      font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
       font-weight: bold;
       text-transform: uppercase;
       background: rgba(0, 0, 0, 0.8); }
@@ -97,7 +100,7 @@ PORTFOLIO
       color: white;
       width: 100%;
       padding: 9px 2px;
-      font-family: "Roboto", cursive;
+      font-family: "Helvetica Neue", cursive;
       font-weight: bold;
       text-transform: uppercase;
       background: rgba(0, 0, 0, 0.8); }
@@ -111,7 +114,7 @@ PORTFOLIO
       color: white;
       width: 100%;
       padding: 9px 2px;
-      font-family: "Roboto", cursive;
+      font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
       font-weight: bold;
       text-transform: uppercase;
       background: rgba(0, 0, 0, 0.8); }
@@ -142,7 +145,7 @@ PORTFOLIO
     background: white;
     color: #e26562;
     font-weight: bold;
-    font-family: "Roboto", cursive;
+    font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
     transition: 0.3s; }
     #portfolio button:hover {
       background: #0d0d0d;
@@ -152,7 +155,7 @@ PORTFOLIO
 ABOUT
 *********************/
 #about {
-  /* height: 600px; */
+  background: #000;
   text-align: center; }
   #about h2 {
     font-size: 2.5em;
@@ -172,7 +175,7 @@ ABOUT
     border-radius: 100%;
     width: 80%; }
   #about p {
-    font-family: "Roboto", cursive; }
+    font-family: "Helvetica Neue", Helvetica, sans-serif, cursive; }
     #about p .bold {
       font-weight: bold;
       font-size: 1.1em;
@@ -181,14 +184,19 @@ ABOUT
     padding: 10px 0;
     font-family: "Permanent Marker", cursive; }
 
-.aboutOffers p,
 .aboutResume p {
-  background: rgba(230, 230, 230, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 5px;
-  box-shadow: 1px 1px 2px #f2b9b8;
-  transition: 0.3s;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 10px 20px;
+  box-shadow: 1px 1px 5px #fae4e3;
   border-radius: 4px; }
+
+.aboutOffers h4 {
+  color: #e26562; }
+.aboutOffers p {
+  color: #fff;
+  padding: 10px 0 20px;
+  margin: 10px 20px; }
 
 /*********************
 OFFER
@@ -197,7 +205,7 @@ OFFER
   /*  height: 1000px; */
   text-align: center;
   padding: 20px 20px;
-  background: #404040; }
+  background: #fff; }
   #offers h2 {
     font-size: 2.5em;
     font-family: "Permanent Marker", cursive;
@@ -214,16 +222,16 @@ OFFER
   #offers .offer {
     margin: 13px 7px;
     padding: 30px 10px;
-    background: #4a4a4a;
+    background: #0d0d0d;
     box-shadow: 3px 4px 3px #1a1a1a;
     box-shadow: 1px 1px 3px #e26562;
     text-align: center;
-    font-family: "Roboto", cursive;
+    font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
     transition: 0.3s;
     border-radius: 15px; }
     #offers .offer:hover {
       transform: scale(1.03);
-      background: #525252; }
+      background: #1f1f1f; }
     #offers .offer a {
       text-decoration-line: none; }
     #offers .offer h4 {
@@ -254,7 +262,7 @@ CONTACT
   #contact .info-contact {
     padding-top: 40px; }
     #contact .info-contact h5 {
-      font-family: "Roboto", cursive;
+      font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
       font-size: 1.5em;
       font-weight: bold; }
   #contact form {
@@ -270,7 +278,7 @@ CONTACT
       background: white;
       color: #e26562;
       font-weight: bold;
-      font-family: "Roboto", cursive;
+      font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
       transition: 0.3s; }
       #contact form button:hover {
         background: #0d0d0d;
@@ -303,7 +311,11 @@ footer {
     color: #913399; }
 
 @media (min-width: 700px) {
+  #about .wrapper {
+    margin: 0 20px; }
+
   .info-computer {
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center; }
@@ -383,29 +395,6 @@ footer {
               font-size: 1.5em;
               padding: 0 5px; }
 
-  .aboutResume,
-  .aboutOffers {
-    padding-top: 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px; }
-    .aboutResume p,
-    .aboutOffers p {
-      background: rgba(230, 230, 230, 0.2);
-      border-right: 1px solid rgba(0, 0, 0, 0.2);
-      padding: 5px;
-      box-shadow: 1px 1px 2px #f2b9b8;
-      transition: 0.3s;
-      border-radius: 4px; }
-
-  .aboutOffers {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-    .aboutOffers h4 {
-      grid-column: 1/3; }
-    .aboutOffers p {
-      grid-column: 1/3; }
-
   .aboutOffers p:first-child {
     border-right: 1px solid black; }
 
@@ -443,7 +432,7 @@ footer {
 
   .item-mobile {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
 
   #portfolio h2 {
     font-size: 3em; }
@@ -457,17 +446,19 @@ footer {
   #contact h2 {
     font-size: 3em; }
 
-  #about .info-about {
-    text-align: left; }
-
-  #about p {
-    font-size: 1.1em; }
+  #about .aboutResume p {
+    font-size: 1.1em;
+    margin: 20px 20px;
+    padding: 20px 10px; }
 
   #about p::first-letter {
     font-size: 2.5em;
     color: #d12b27;
     padding-right: 3px;
-    font-family: "Permanent Marker", cursive; } }
+    font-family: "Permanent Marker", cursive; }
+
+  .aboutOffers p {
+    font-size: 1.4em !important; } }
 /**************
 HEADER
 **************/
@@ -517,14 +508,14 @@ HEADER
         color: white;
         width: 100%;
         padding: 9px 2px;
-        font-family: "Roboto", cursive;
+        font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
         font-weight: bold;
         text-transform: uppercase;
         background: rgba(0, 0, 0, 0.8); }
         #showcase .container .item .showcaseTitle h4 {
-          font-family: "Roboto", cursive; }
+          font-family: "Helvetica Neue", Helvetica, sans-serif, cursive; }
         #showcase .container .item .showcaseTitle p {
-          font-family: "Roboto", cursive;
+          font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
           margin-bottom: 0; }
     #showcase .container .item1 {
       /*  background: url("../img/DeanHollingworth.png");
@@ -545,7 +536,7 @@ HEADER
       background: white;
       border: 1px solid black;
       border-radius: 3px;
-      font-family: "Roboto", cursive;
+      font-family: "Helvetica Neue", Helvetica, sans-serif, cursive;
       font-weight: bold; }
       #showcase .showcaseMore button:hover {
         background: black;
